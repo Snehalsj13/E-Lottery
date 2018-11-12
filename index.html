@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-lottery</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-content">
+        <header class="site-header">
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="index.html" rel="home">E-lottery</a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+		
+        <div class="hero-content-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                                <h1>Somebody's gotta win, might as well be you.</h1>
+                                <h1>Luck is right in front of you, play.</h1>
+                            </header><!-- .entry-header -->
+                          
+                            <footer class="entry-footer read-more">
+                                <a data-toggle="modal" href="#modalLoginForm" > Login  /  Register </a>
+								<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Launch demo modal</button>-->
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .hero-content-wrap -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .hero-content-hero-content-overlay -->
+    </div><!-- .hero-content -->
+	
+	<footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <a class="foot-logo" href="index.html" rel="home">E-lottery</a>
+
+                            <p>Online Lottery System. </p>
+
+                            <p class="footer-copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact Us</h2>
+
+                            <ul>
+                                <li>Email: abc@csu.fullerton.edu</li>
+                                <li>Phone: (+1) 111 555 666</li>
+                                <li>Address: 800 State College Blvd,Fullerton, CA, US</li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+                    </div><!-- .col -->
+					
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+	</footer><!-- .site-footer -->
+
+
+<form id="signinForm">
+	<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content margin-top">
+				<div class="modal-header text-center">
+					<h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body mx-3">
+					<div class="md-form mb-5">
+						<i class="fa fa-envelope prefix grey-text"></i>
+						<input type="email" id="emailInputSignin" class="form-control validate" placeholder="Email" required>
+						<!--input type="email" id="defaultForm-email" class="form-control validate"-->
+						<label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+					</div>
+
+					<div class="md-form mb-4">
+						<i class="fa fa-lock prefix grey-text"></i>
+						<input type="password" id="passwordInputSignin" class="form-control validate" placeholder="Password" pattern=".*" required>
+						<!--input type="password" id="defaultForm-pass" class="form-control validate"-->
+						<label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+						<br>
+						<a data-toggle="modal" data-dismiss="modal" href="#modalForgotPassword" >Forgot password?</a>
+					</div>
+
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<!--button class="btn btn-default" href="/home.html">Login</button-->
+					
+						<input type="submit" value="Sign in">
+						<!--a class="home-button" href="/home.html">Login</a-->
+					
+					<a class="home-button" href="/register.html">Start enrolling</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+<div class="modal fade" id="modalForgotPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content margin-top">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Reset password</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" id="defaultForm-email" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-default">Send Reset Link</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--script src="js/vendor/jquery-3.1.0.js"></script-->
+<script src="js/vendor/aws-cognito-sdk.min.js"></script>
+<script src="js/vendor/amazon-cognito-identity.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/cognito-auth.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>

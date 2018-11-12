@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-lottery</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
+		<script>
+            // Load app.js script after document has rendered.
+            var script = document.createElement('script');
+            script.src = 'js/fireworks.js';
+            script.type = 'text/javascript';
+            document.getElementsByTagName('head')[0].appendChild(script);
+        </script>
+</head>
+<body class="contact-page">
+    <div class="page-header">
+        <header class="site-header">
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="index.html" rel="home">E-lottery</a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-9 col-lg-9 flex  align-content-center">
+                            <nav class="site-navigation header-bar-left-margin flex align-items-center">
+                                <ul class="flex flex-column flex-lg-row align-content-center">
+                                    <li><a href="home.html">Buy Ticket</a></li>
+                                    <li class="current-menu-item"><a href="result.html">View Result</a></li>
+                                </ul>
+
+                               
+                                </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+       <!--  <div class="page-header-overlay">
+		<div class="canvas-body">
+		 <div class="modal-footer d-flex justify-content-center">
+			Today could be the day. Here's your ticket to dream”
+                <button onclick="toggle_visibility('canvas');" class="btn btn-default">Result</button>
+            </div>
+		<a href="#" onclick="toggle_visibility('canvas');">Click here to toggle visibility of element #foo</a>
+			 <canvas id="canvas" style="display:none;">Your browser does not support the 'canvas' element.
+				
+			 </canvas>
+			 
+		</div>
+        </div> --><!-- .page-header-overlay -->
+		
+    </div><!-- .page-header -->
+
+	
+	
+	
+	
+	
+	<div id = "hideDiv"class="hero-content-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div   class="hero-content-wrap flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                                <h1>Today could be the day. Here's your ticket to dream</h1>
+                            </header><!-- .entry-header -->
+                          
+                            <footer class="entry-footer read-more">
+                                <a onclick="toggle_visibility('canvas');" href="#" > View Result </a>
+								<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Launch demo modal</button>-->
+                            </footer><!-- .entry-footer -->
+							
+                        </div><!-- .hero-content-wrap -->
+						
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .hero-content-hero-content-overlay -->
+	
+		<div class="hero-content-overlay">
+							<canvas id="canvas" style="display:none;">Your browser does not support the 'canvas' element.
+							 <div> ghfhffghjh</div>
+							</canvas>
+		</div>
+			
+	
+	<footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <a class="foot-logo" href="index.html" rel="home">E-lottery</a>
+
+                            <p>Online Lottery System. </p>
+
+                            <p class="footer-copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact Us</h2>
+
+                            <ul>
+                                <li>Email: abc@csu.fullerton.edu</li>
+                                <li>Phone: (+1) 111 555 666</li>
+                                <li>Address: 800 State College Blvd,Fullerton, CA, US</li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+                    </div><!-- .col -->
+					
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+	</footer><!-- .site-footer -->
+	
+	<script>
+	
+	function buyTicket() {
+  setTimeout(function(){
+    odometer.innerHTML = Math.floor(Math.random()*900000) + 100000;;
+}, 1000);
+}
+
+
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       var hide = document.getElementById("hideDiv");
+			hide.style.display = 'none';
+          e.style.display = 'block';
+		  var ctx = e.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+    }
+//-->
+
+	</script>
+
+    
+
+    
+	<script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
