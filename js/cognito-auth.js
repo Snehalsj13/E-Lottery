@@ -3,7 +3,7 @@
 var WildRydes = window.WildRydes || {};
 
 (function scopeWrapper($) {
-    var signinUrl = '/home.html';
+    var signinUrl = '/index.html';
 
     var poolData = {
         UserPoolId: _config.cognito.userPoolId,
@@ -135,8 +135,12 @@ var WildRydes = window.WildRydes || {};
             console.log('user name is ' + cognitoUser.getUsername());
             var confirmation = ('Registration successful. Please check your email inbox or spam folder for your verification code.');
             if (confirmation) {
+				//$('#loginModal').modal('hide');
+				//$('#modalVerify').modal('show');
+				
 				
                 window.location.href = 'verify.html';
+				alert('Registration successful. Please check your email inbox or spam folder for your verification code.');
             }
         };
         var onFailure = function registerFailure(err) {
