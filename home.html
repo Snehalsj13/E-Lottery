@@ -44,6 +44,7 @@
                                 <ul class="flex flex-column flex-lg-row align-content-center">
                                     <li class="current-menu-item"><a href="index.html">Buy Ticket</a></li>
                                     <li><a href="result.html">View Result</a></li>
+									<li style="margin-left: 43%;"><a href="index.html">Logout</a></li>
                                 </ul>
 
                                
@@ -59,7 +60,7 @@
 			<div id="odometer" class="odometer">123,450</div>
 			
                 <!--<a  > Login  /  Register </a>-->
-				<button type="button" class="btn btn-primary" onclick="buyTicket()">Buy Ticket Now</button>
+				<button type="button" id = "buyTicket" class="btn btn-primary">Buy Ticket Now</button>
            
 		</div>
 		
@@ -86,7 +87,7 @@
                             <h2>Contact Us</h2>
 
                             <ul>
-                                <li>Email: abc@csu.fullerton.edu</li>
+                                <li>Email: myticketinfo3@gmail.com</li>
                                 <li>Phone: (+1) 111 555 666</li>
                                 <li>Address: 800 State College Blvd,Fullerton, CA, US</li>
                             </ul>
@@ -98,24 +99,25 @@
         </div><!-- .footer-widgets -->
 	</footer><!-- .site-footer -->
 	
-	<script>
 	
-	function buyTicket() {
-  setTimeout(function(){
-    odometer.innerHTML = Math.floor(Math.random()*900000) + 100000;;
-}, 1000);
-}
-	</script>
+	
 
-    
 
-    
-	<script src="http://github.hubspot.com/odometer/odometer.js"></script>
-    <script type='text/javascript' src='js/jquery.js'></script>
+
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+	<script src="js/vendor/jquery-3.1.0.js"></script>
     <script type='text/javascript' src='js/swiper.min.js'></script>
     <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-    <script type='text/javascript' src='js/custom.js'></script>
+	<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="https://js.arcgis.com/4.3/"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+    <script src="js/home.js"></script>
+	<script type='text/javascript' src='js/custom.js'></script>
+	<script type='text/javascript' src='js/home.js'></script>
 
 </body>
 </html>
