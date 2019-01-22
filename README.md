@@ -1,4 +1,4 @@
-# URL: 
+
 	http://lottery-snehal-jadhav.s3-website-us-east-1.amazonaws.com/ 
 
 ## Static Web Hosting with Amazon S3
