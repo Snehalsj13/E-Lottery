@@ -1,5 +1,5 @@
-## Website is available at:
-	[E-Lottery System](http://lottery-snehal-jadhav.s3-website-us-east-1.amazonaws.com/)
+## Website:
+[E-Lottery System](http://lottery-snehal-jadhav.s3-website-us-east-1.amazonaws.com/) 
 
 ## Static Web Hosting with Amazon S3
 
