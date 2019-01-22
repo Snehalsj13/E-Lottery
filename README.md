@@ -1,4 +1,7 @@
-#Static Web Hosting with Amazon S3
+# URL: 
+	http://lottery-snehal-jadhav.s3-website-us-east-1.amazonaws.com/ 
+
+## Static Web Hosting with Amazon S3
 
 Configure Amazon Simple Storage Service (S3) to host the static resources for your web application. After this, you can add dynamic functionality to these pages using JavaScript to call remote RESTful APIs built with AWS Lambda and Amazon API Gateway.
 
